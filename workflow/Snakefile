@@ -6,5 +6,6 @@
 rule touch:
     output: "file.txt"
     conda: "../envs/empty.yaml"
+    log: "logs/touch.log"
     shell:
         "touch {output}"

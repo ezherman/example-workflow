@@ -4,7 +4,7 @@
 # in particular regarding the standardized folder structure mentioned there. 
 
 rule touch:
-    output: file.txt
+    output: "file.txt"
     conda: "../envs/empty.yaml"
     shell:
         "touch {output}"
